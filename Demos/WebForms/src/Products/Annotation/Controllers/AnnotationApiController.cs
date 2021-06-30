@@ -250,7 +250,7 @@ namespace GroupDocs.Annotation.WebForms.Products.Annotation.Controllers
             List<string> allPages = new List<string>();
 
             //get page HTML
-            for (int i = 0; i < pages.PageCount; i++)
+            for (int i = 0; i < pages.PagesInfo.Count; i++)
             {
                 byte[] bytes;
                 using (var memoryStream = RenderPageToMemoryStream(annotator, i + 1))

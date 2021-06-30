@@ -142,15 +142,18 @@ namespace GroupDocs.Annotation.WebForms.Products.Annotation.Annotator
             {
                 case "Portable Document Format":
                     return AnnotatePdf();
+                case "Microsoft Visio":
                 case "Microsoft Word":
                 case "Open Document Text":
                     return AnnotateWord();
                 case "Rich Text Format":
                     return AnnotateWord();
+                case "Open Document Presentation":
                 case "Microsoft PowerPoint":
                     return AnnotateSlides();
                 case "image":
                     return AnnotateImage();
+                case "Open Document Spreadsheet":
                 case "Microsoft Excel":
                     return AnnotateCells();
                 case "AutoCAD Drawing File Format":
