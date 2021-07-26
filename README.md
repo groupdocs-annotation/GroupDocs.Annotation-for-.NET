@@ -12,10 +12,8 @@ GroupDocs.Annotation for .NET is a lightweight, yet powerful .NET library that s
 
 Directory | Description
 --------- | -----------
-[Demos](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Demos)  | Contains demo projects that demonstrate product features.
+[Demos](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Demos)  | GroupDocs.Annotation for .NET Demo projects.
 [Examples](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Examples)  | Contains the package of all .NET C# examples and sample files that will help you learn how to use product features.
-[Showcases](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Showcases)  | The open source UI examples have been developed to help the developers in order to give them an idea that how they will integrate the GroupDocs.Annotation for .NET API in the front end applications.
-
 
 ## Annotate Documents & Images via .NET Library
 
