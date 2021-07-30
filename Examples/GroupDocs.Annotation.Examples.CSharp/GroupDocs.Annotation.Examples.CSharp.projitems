@@ -51,6 +51,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextStrikeoutAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextUnderlineAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddWatermarkAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddComponentsToTheDocument\PDF\AddDropdownComponent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddReplies.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\ExtractAnnotationsFromDocument.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\GetFileInfo.cs" />

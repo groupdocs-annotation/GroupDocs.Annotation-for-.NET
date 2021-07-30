@@ -225,6 +225,10 @@ namespace GroupDocs.Annotation.Examples.CSharp
             AddTextUnderlineAnnotation.Run();
             #endregion
 
+            #region Add dropdown annotation
+            AddDropdownComponent.Run();
+            #endregion
+
             #region Add watermark annotation
             AddWatermarkAnnotation.Run();
             #endregion
