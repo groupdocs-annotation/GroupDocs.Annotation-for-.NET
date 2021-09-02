@@ -28,6 +28,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
                     Message = "This is watermark annotation",
                     Opacity = 0.7,
                     PageNumber = 0,
+                    AutoScale = true,
+                    HorizontalAlignment = HorizontalAlignment.Center,
+                    VerticalAlignment = VerticalAlignment.Center,
                     Replies = new List<Reply>
                     {
                         new Reply
