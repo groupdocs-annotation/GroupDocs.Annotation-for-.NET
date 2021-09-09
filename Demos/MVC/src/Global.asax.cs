@@ -13,7 +13,7 @@ namespace GroupDocs.Annotation.MVC
             // Set GroupDocs products assemblies names
             string annotationAssemblyName = "GroupDocs.Annotation.dll";
             // set GroupDocs.Annotation license
-            DomainGenerator annotationDomainGenerator = new DomainGenerator(annotationAssemblyName, "GroupDocs.Annotation.License");
+            DomainGenerator annotationDomainGenerator = new DomainGenerator(annotationAssemblyName, "GroupDocs.Annotation.Licenses.License");
             annotationDomainGenerator.SetAnnotationLicense();
            
             AreaRegistration.RegisterAllAreas();

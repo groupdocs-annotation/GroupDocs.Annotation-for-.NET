@@ -32,7 +32,7 @@ namespace GroupDocs.Annotation.MVC.Products.Annotation.Annotator
 
         public override AnnotationBase AnnotateCells()
         {
-            throw new NotSupportedException(string.Format(Message, annotationData.type));
+            return AnnotateWord();
         }
 
         public override AnnotationBase AnnotateSlides()
