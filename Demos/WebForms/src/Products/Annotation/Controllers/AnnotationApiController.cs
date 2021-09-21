@@ -398,7 +398,7 @@ namespace GroupDocs.Annotation.WebForms.Products.Annotation.Controllers
                 response.Content = new StreamContent(fileStream);
                 response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
                 response.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment");
-                response.Content.Headers.ContentDisposition.FileName = Path.GetFileName(path);
+                response.Content.Headers.ContentDisposition.FileName = ConvertFormat(path);
                 return response;
             }
             else
@@ -406,6 +406,27 @@ namespace GroupDocs.Annotation.WebForms.Products.Annotation.Controllers
                 return new HttpResponseMessage(HttpStatusCode.NotFound);
             }
         }
+
+        public string ConvertFormat(string path)
+        {
+            string fileName = Path.GetFileName(path);
+            string[] splits = fileName.Split('.');
+            string t = null;
+            foreach (var split in splits)
+            {
+                t = split;
+            }
+
+            switch (t)
+            {
+                case "ods":
+                    return Path.GetFileName(path).Replace(t, "") + "xlsx";
+                case "vsd":
+                    return Path.GetFileName(path).Replace(t, "") + "vsdx";
+                default: return Path.GetFileName(path);
+            }
+        }
+    }
 
         ///// <summary>
         ///// Annotate document
