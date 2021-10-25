@@ -425,7 +425,6 @@ namespace GroupDocs.Annotation.MVC.Products.Annotation.Controllers
                 default: return Path.GetFileName(path);
             }
         }
-    }
 
         ///// <summary>
         ///// Annotate document
