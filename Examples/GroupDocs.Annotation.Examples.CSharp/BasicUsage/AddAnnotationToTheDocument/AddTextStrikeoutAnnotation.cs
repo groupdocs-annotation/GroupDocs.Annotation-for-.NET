@@ -25,6 +25,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
                     Message = "This is strikeout annotation",
                     Opacity = 0.7,
                     PageNumber = 0,
+                    BackgroundColor = 16761035,
                     Points = new List<Point>
                     {
                         new Point(80, 730), new Point(240, 730), new Point(80, 650), new Point(240, 650)

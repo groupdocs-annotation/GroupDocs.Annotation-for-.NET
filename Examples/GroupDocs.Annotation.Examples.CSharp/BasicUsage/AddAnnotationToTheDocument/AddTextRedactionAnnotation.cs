@@ -23,6 +23,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
                     CreatedOn = DateTime.Now,
                     Message = "This is text redaction annotation",
                     PageNumber = 0,
+                    FontColor = 16761035,
                     Points = new List<Point>
                     {
                         new Point(80, 730), new Point(240, 730), new Point(80, 650), new Point(240, 650)
