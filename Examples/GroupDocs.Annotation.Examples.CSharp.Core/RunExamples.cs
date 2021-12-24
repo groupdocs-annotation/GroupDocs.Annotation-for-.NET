@@ -226,11 +226,11 @@ namespace GroupDocs.Annotation.Examples.CSharp
             #endregion
 
             #region Add squiggly annotation
-            AddTextUnderlineAnnotation.Run();
+            AddTextSquigglyAnnotation.Run();
             #endregion
 
-            #region Add checkbox component
-            AddTextUnderlineAnnotation.Run();
+            #region Add checkbox annotation
+            AddCheckBoxComponent.Run();
             #endregion
 
             #region Add dropdown annotation

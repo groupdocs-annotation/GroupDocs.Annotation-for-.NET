@@ -26,6 +26,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
                     Opacity = 0.7,
                     PageNumber = 0,
                     BackgroundColor = 16761035,
+                    SquigglyColor = 1422623, // works supported only Word and PDF documents
                     Points = new List<Point>
                     {
                         new Point(80, 730), new Point(240, 730), new Point(80, 650), new Point(240, 650)
