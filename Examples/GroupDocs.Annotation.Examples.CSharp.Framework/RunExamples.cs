@@ -238,6 +238,10 @@ namespace GroupDocs.Annotation.Examples.CSharp
             AddDropdownComponent.Run();
             #endregion
 
+             #region Add button annotation
+            AddButtonComponent.Run();
+            #endregion
+
             #region Add watermark annotation
             AddWatermarkAnnotation.Run();
             #endregion
