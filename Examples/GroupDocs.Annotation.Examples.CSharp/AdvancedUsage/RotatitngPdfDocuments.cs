@@ -4,7 +4,7 @@ using GroupDocs.Annotation.Options;
 
 namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage
 {
-    class SetDocumentPreviewResolution
+    class RotationDocument
     {
         public static void Run()
         {

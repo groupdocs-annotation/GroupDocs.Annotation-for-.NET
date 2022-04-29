@@ -4,7 +4,7 @@ using GroupDocs.Annotation;
 
 namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage
 {
-    class SetDocumentPreviewResolution
+    class ImportAnnotationsFromDocument
     {
         public static void Run()
         {
