@@ -206,6 +206,10 @@ namespace GroupDocs.Annotation.Examples.CSharp
             AddTextFieldAnnotation.Run();
             #endregion
 
+            #region Add search text annotation
+            AddSearchTextFragmentAnnotation.Run();
+            #endregion
+
             #region Add text redaction annotation
             AddTextRedactionAnnotation.Run();
             #endregion

@@ -245,6 +245,10 @@ namespace GroupDocs.Annotation.Examples.CSharp
             AddReplies.Run();
             #endregion
 
+            #region Add search text annotation
+            AddSearchTextFragmentAnnotation.Run();
+            #endregion
+
             #region Remove replies
             RemoveReplies.Run();
             #endregion
