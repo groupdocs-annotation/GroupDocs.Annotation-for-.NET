@@ -1,7 +1,6 @@
 ﻿using GroupDocs.Annotation.MVC.Products.Common.Entity.Web;
 using System;
 using System.IO;
-using System.Web;
 
 namespace GroupDocs.Annotation.MVC.Products.Common.Resources
 {

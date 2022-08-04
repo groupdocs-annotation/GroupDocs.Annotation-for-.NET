@@ -2,7 +2,6 @@
 using GroupDocs.Annotation.Models.AnnotationModels;
 using GroupDocs.Annotation.MVC.Products.Annotation.Entity.Web;
 using GroupDocs.Annotation.Options;
-using System;
 
 namespace GroupDocs.Annotation.MVC.Products.Annotation.Annotator
 {
@@ -13,7 +12,8 @@ namespace GroupDocs.Annotation.MVC.Products.Annotation.Annotator
         public TextFieldAnnotator(AnnotationDataEntity annotationData, PageInfo pageInfo)
             : base(annotationData, pageInfo)
         {
-            textFieldAnnotation = new TextFieldAnnotation {
+            textFieldAnnotation = new TextFieldAnnotation
+            {
                 Box = GetBox(),
                 FontFamily = !string.IsNullOrEmpty(annotationData.font) ? annotationData.font : "Arial",
                 FontColor = annotationData.fontColor,
@@ -21,7 +21,7 @@ namespace GroupDocs.Annotation.MVC.Products.Annotation.Annotator
                 Text = annotationData.text
             };
         }
-        
+
         public override AnnotationBase AnnotateWord()
         {
             textFieldAnnotation = InitAnnotationBase(textFieldAnnotation) as TextFieldAnnotation;

@@ -1,10 +1,9 @@
-﻿using Newtonsoft.Json;
+﻿using GroupDocs.Annotation.MVC.Products.Common.Config;
+using GroupDocs.Annotation.MVC.Products.Common.Util.Parser;
+using Newtonsoft.Json;
 using System;
 using System.IO;
 using System.Linq;
-using GroupDocs.Annotation.MVC.Products.Common.Config;
-using GroupDocs.Annotation.MVC.Products.Common.Util.Parser;
-using Newtonsoft.Json;
 
 namespace GroupDocs.Annotation.MVC.Products.Annotation.Config
 {

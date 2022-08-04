@@ -58,7 +58,7 @@ namespace GroupDocs.Annotation.MVC.AppDomainGenerator
             // Initiate class from the loaded assembly
             Type type = assembly.GetType(className);
             return type;
-        }      
+        }
 
         /// <summary>
         /// Set GroupDocs.Annotation license
@@ -69,7 +69,7 @@ namespace GroupDocs.Annotation.MVC.AppDomainGenerator
             var obj = (GroupDocs.Annotation.License)Activator.CreateInstance(CurrentType);
             // Set license
             SetLicense(obj);
-        }        
+        }
 
         private void SetLicense(dynamic obj)
         {

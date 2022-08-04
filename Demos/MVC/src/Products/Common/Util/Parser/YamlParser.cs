@@ -11,7 +11,7 @@ namespace GroupDocs.Annotation.MVC.Products.Common.Util.Parser
         private readonly dynamic ConfiguationData;
 
         public YamlParser()
-        {           
+        {
             if (File.Exists(YamlPath))
             {
                 using (var reader = new StringReader(File.ReadAllText(YamlPath)))
@@ -23,17 +23,18 @@ namespace GroupDocs.Annotation.MVC.Products.Common.Util.Parser
                         .JsonCompatible()
                         .Build();
 
-                    ConfiguationData = serializer.Serialize(yamlObject);                     
+                    ConfiguationData = serializer.Serialize(yamlObject);
                 }
-            }             
+            }
         }
 
-        public dynamic GetConfiguration(string configurationSectionName) {
+        public dynamic GetConfiguration(string configurationSectionName)
+        {
             dynamic productConfiguration = null;
             if (ConfiguationData != null)
             {
                 productConfiguration = JsonConvert.DeserializeObject(ConfiguationData)[configurationSectionName];
-            } 
+            }
             return productConfiguration;
         }
     }

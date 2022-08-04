@@ -158,7 +158,7 @@ namespace GroupDocs.Annotation.MVC.Products.Annotation.Controllers
 
                     if (annotations != null && annotations.Length > 0)
                     {
-                        page.SetAnnotations(AnnotationMapper.MapForPage(annotations, i+1, info.PagesInfo[i], documentType));
+                        page.SetAnnotations(AnnotationMapper.MapForPage(annotations, i + 1, info.PagesInfo[i], documentType));
                     }
 
                     if (pagesContent.Count > 0)

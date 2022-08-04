@@ -4,7 +4,6 @@ using GroupDocs.Annotation.MVC.Products.Annotation.Entity.Web;
 using GroupDocs.Annotation.Options;
 using System;
 using System.Linq;
-using System.Runtime;
 
 namespace GroupDocs.Annotation.MVC.Products.Annotation.Annotator
 {
