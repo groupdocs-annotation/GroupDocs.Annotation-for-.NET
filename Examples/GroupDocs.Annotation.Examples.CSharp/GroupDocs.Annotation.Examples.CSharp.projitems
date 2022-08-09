@@ -44,13 +44,17 @@
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddPointAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddPolylineAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddResourcesRedactionAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddSearchTextFragmentAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextFieldAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextHighlightAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextRedactionAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextReplacementAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextSquigglyAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextStrikeoutAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextUnderlineAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddWatermarkAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddComponentsToTheDocument\PDF\AddButtonComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddComponentsToTheDocument\PDF\AddCheckBoxComponent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddComponentsToTheDocument\PDF\AddDropdownComponent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddReplies.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\ExtractAnnotationsFromDocument.cs" />

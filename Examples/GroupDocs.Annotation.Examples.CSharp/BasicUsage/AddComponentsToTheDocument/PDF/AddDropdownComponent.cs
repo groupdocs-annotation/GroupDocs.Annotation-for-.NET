@@ -17,7 +17,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
         {
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
-            using (Annotator annotator = new Annotator("input.pdf"))
+            using (Annotator annotator = new Annotator(Constants.INPUT))
             {
                 DropdownComponent dropdown = new DropdownComponent
                 {

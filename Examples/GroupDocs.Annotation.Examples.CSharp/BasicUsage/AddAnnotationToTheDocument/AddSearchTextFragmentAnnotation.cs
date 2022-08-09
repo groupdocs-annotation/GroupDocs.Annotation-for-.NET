@@ -10,10 +10,11 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
     /// <summary>
     /// This example demonstrates adding search text fragment annotation.
     /// </summary>
-    class AddSearchTextAnnotation
+    class AddSearchTextFragmentAnnotation
     {
         public static void Run()
         {
+            
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             using (Annotator annotator = new Annotator(Constants.INPUT))

@@ -9,9 +9,9 @@ using GroupDocs.Annotation.Options;
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocument
 {
     /// <summary>
-    /// This example demonstrates adding checkBox component.
+    /// This example demonstrates adding button component.
     /// </summary>
-    class AddCheckBoxComponent
+    class AddButtonComponent
     {
         public static void Run()
         {
@@ -19,12 +19,17 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
 
             using (Annotator annotator = new Annotator(Constants.INPUT))
             {
-                CheckBoxComponent checkBox = new CheckBoxComponent
+                ButtonComponent button = new ButtonComponent
                 {
-                    Checked = true,
                     Box = new Rectangle(100, 100, 100, 100),
                     PenColor = 65535,
-                    Style = BoxStyle.Star,
+                    Style = BorderStyle.Dashed,
+                    BorderWidth = 0,
+                    BorderColor = 0,
+                    AlternateName = "Name",
+                    PartialName = "Patial Name",
+                    NormalCaption = "Caption",
+                    ButtonColor = 16761035,
                     Replies = new List<Reply>
                         {
                             new Reply
@@ -39,7 +44,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
                             }
                         }
                 };
-                annotator.Add(checkBox);
+                annotator.Add(button);
                 annotator.Save("result.pdf");
             }
 
