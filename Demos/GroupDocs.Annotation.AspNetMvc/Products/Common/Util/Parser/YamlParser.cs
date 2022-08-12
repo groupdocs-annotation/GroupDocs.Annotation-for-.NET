@@ -15,7 +15,7 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Common.Util.Parser
         {
             if (File.Exists(YamlPath))
             {
-                using (var reader = new StringReader(WebRequestMethods.File.ReadAllText(YamlPath)))
+                using (var reader = new StringReader(File.ReadAllText(YamlPath)))
                 {
                     var deserializer = new DeserializerBuilder().Build();
                     var yamlObject = deserializer.Deserialize(reader);

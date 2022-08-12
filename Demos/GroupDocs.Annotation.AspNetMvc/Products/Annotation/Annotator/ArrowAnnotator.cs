@@ -1,9 +1,7 @@
-﻿using System.Drawing;
-using GroupDocs.Annotation.Models;
+﻿using GroupDocs.Annotation.Models;
 using GroupDocs.Annotation.Models.AnnotationModels;
 using GroupDocs.Annotation.Options;
 using System.Globalization;
-using GroupDocs.Annotation.AspNetMvc.Products.Annotation.Annotator;
 using GroupDocs.Annotation.AspNetMvc.Products.Annotation.Entity.Web;
 using Rectangle = GroupDocs.Annotation.Models.Rectangle;
 

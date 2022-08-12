@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Web;
-using System.Web.Mvc;
+using System.Web.Http;
 using GroupDocs.Annotation.AspNetMvc.Products.Annotation.Annotator;
 using GroupDocs.Annotation.AspNetMvc.Products.Annotation.Config;
 using GroupDocs.Annotation.AspNetMvc.Products.Annotation.Entity.Web;
@@ -27,8 +29,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         /// Load Annotation configuration
         /// </summary>
         /// <returns>Annotation configuration</returns>
-        [HttpGet]
-        [Route("loadConfig")]
+        [System.Web.Mvc.HttpGet]
+        [System.Web.Mvc.Route("loadConfig")]
         public AnnotationConfiguration LoadConfig()
         {
             return globalConfiguration.Annotation;
@@ -39,8 +41,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         /// </summary>
         /// <param name="postedData">SignaturePostedDataEntity</param>
         /// <returns>List of files and directories</returns>
-        [HttpPost]
-        [Route("loadFileTree")]
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("loadFileTree")]
         public HttpResponseMessage loadFileTree(PostedDataEntity postedData)
         {
             // get request body
@@ -100,8 +102,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         /// </summary>
         /// <param name="postedData">Post data</param>
         /// <returns>Document info object</returns>
-        [HttpPost]
-        [Route("loadDocumentDescription")]
+        [System.Web.Mvc.HttpPost]
+        [System.Web.Mvc.Route("loadDocumentDescription")]
         public HttpResponseMessage LoadDocumentDescription(AnnotationPostedDataEntity postedData)
         {
             string password = "";
@@ -173,8 +175,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         /// </summary>
         /// <param name="loadDocumentPageRequest"></param>
         /// <returns>Document page image</returns>
-        [HttpPost]
-        [Route("loadDocumentPage")]
+        [System.Web.Mvc.HttpPost]
+        [System.Web.Mvc.Route("loadDocumentPage")]
         public HttpResponseMessage LoadDocumentPage(AnnotationPostedDataEntity loadDocumentPageRequest)
         {
             string password = "";
@@ -278,8 +280,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         /// Upload document
         /// </summary>      
         /// <returns>Uploaded document object</returns>
-        [HttpPost]
-        [Route("uploadDocument")]
+        [System.Web.Mvc.HttpPost]
+        [System.Web.Mvc.Route("uploadDocument")]
         public HttpResponseMessage UploadDocument()
         {
             try
@@ -351,8 +353,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         /// <param name="path">string</param>
         /// <param name="annotated">bool</param>
         /// <returns></returns>
-        [HttpGet]
-        [Route("downloadDocument")]
+        [System.Web.Mvc.HttpGet]
+        [System.Web.Mvc.Route("downloadDocument")]
         public HttpResponseMessage DownloadDocument(string path)
         {
             // add file into the response
@@ -379,8 +381,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         /// <param name="path">string</param>
         /// <param name="annotated">bool</param>
         /// <returns></returns>
-        [HttpGet]
-        [Route("downloadAnnotated")]
+        [System.Web.Mvc.HttpGet]
+        [System.Web.Mvc.Route("downloadAnnotated")]
         public HttpResponseMessage DownloadAnnotated(string path)
         {
             // add file into the response
@@ -424,8 +426,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         ///// Annotate document
         ///// </summary>      
         ///// <returns>Annotated document info</returns>
-        [HttpPost]
-        [Route("annotate")]
+        [System.Web.Mvc.HttpPost]
+        [System.Web.Mvc.Route("annotate")]
         public HttpResponseMessage Annotate(AnnotationPostedDataEntity annotateDocumentRequest)
         {
             AnnotatedDocumentEntity annotatedDocument = new AnnotatedDocumentEntity();

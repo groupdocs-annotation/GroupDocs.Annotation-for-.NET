@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Configuration;
-using System.Linq;
-using System.Web;
 using GroupDocs.Annotation.AspNetMvc.Products.Common.Util.Parser;
 
 namespace GroupDocs.Annotation.AspNetMvc.Products.Common.Config
