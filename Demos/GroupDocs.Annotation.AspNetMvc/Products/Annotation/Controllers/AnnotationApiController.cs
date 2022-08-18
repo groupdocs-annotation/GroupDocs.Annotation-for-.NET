@@ -102,8 +102,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         /// </summary>
         /// <param name="postedData">Post data</param>
         /// <returns>Document info object</returns>
-        [System.Web.Mvc.HttpPost]
-        [System.Web.Mvc.Route("loadDocumentDescription")]
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("loadDocumentDescription")]
         public HttpResponseMessage LoadDocumentDescription(AnnotationPostedDataEntity postedData)
         {
             string password = "";
@@ -175,8 +175,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         /// </summary>
         /// <param name="loadDocumentPageRequest"></param>
         /// <returns>Document page image</returns>
-        [System.Web.Mvc.HttpPost]
-        [System.Web.Mvc.Route("loadDocumentPage")]
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("loadDocumentPage")]
         public HttpResponseMessage LoadDocumentPage(AnnotationPostedDataEntity loadDocumentPageRequest)
         {
             string password = "";
@@ -280,8 +280,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         /// Upload document
         /// </summary>      
         /// <returns>Uploaded document object</returns>
-        [System.Web.Mvc.HttpPost]
-        [System.Web.Mvc.Route("uploadDocument")]
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("uploadDocument")]
         public HttpResponseMessage UploadDocument()
         {
             try
@@ -353,8 +353,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         /// <param name="path">string</param>
         /// <param name="annotated">bool</param>
         /// <returns></returns>
-        [System.Web.Mvc.HttpGet]
-        [System.Web.Mvc.Route("downloadDocument")]
+        [System.Web.Http.HttpGet]
+        [System.Web.Http.Route("downloadDocument")]
         public HttpResponseMessage DownloadDocument(string path)
         {
             // add file into the response
@@ -381,8 +381,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         /// <param name="path">string</param>
         /// <param name="annotated">bool</param>
         /// <returns></returns>
-        [System.Web.Mvc.HttpGet]
-        [System.Web.Mvc.Route("downloadAnnotated")]
+        [System.Web.Http.HttpGet]
+        [System.Web.Http.Route("downloadAnnotated")]
         public HttpResponseMessage DownloadAnnotated(string path)
         {
             // add file into the response
@@ -426,8 +426,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         ///// Annotate document
         ///// </summary>      
         ///// <returns>Annotated document info</returns>
-        [System.Web.Mvc.HttpPost]
-        [System.Web.Mvc.Route("annotate")]
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("annotate")]
         public HttpResponseMessage Annotate(AnnotationPostedDataEntity annotateDocumentRequest)
         {
             AnnotatedDocumentEntity annotatedDocument = new AnnotatedDocumentEntity();
