@@ -1,9 +1,9 @@
 using System.Web;
-using GroupDocs.Annotation.AspNetMvc.AppDomainGenerator;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
 using GroupDocs.Annotation.AspNetMvc.App_Start;
+using GroupDocs.Annotation.AspNetMvc.Products.Annotation.Annotator;
 
 namespace GroupDocs.Annotation.AspNetMvc
 {
@@ -11,12 +11,9 @@ namespace GroupDocs.Annotation.AspNetMvc
     {
         protected void Application_Start()
         {
-            // Fix required to use several GroupDocs products in one project.
-            // Set GroupDocs products assemblies names
-            string annotationAssemblyName = "GroupDocs.Annotation.dll";
-            // set GroupDocs.Annotation license
-            DomainGenerator annotationDomainGenerator = new DomainGenerator(annotationAssemblyName, "GroupDocs.Annotation.License");
-            annotationDomainGenerator.SetAnnotationLicense();
+            string licensePath = "";
+            SetLicense license = new SetLicense();
+            license.Set_License(licensePath);
 
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);

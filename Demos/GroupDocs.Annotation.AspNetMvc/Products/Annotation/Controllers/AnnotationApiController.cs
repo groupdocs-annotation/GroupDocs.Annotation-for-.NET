@@ -29,8 +29,8 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Controllers
         /// Load Annotation configuration
         /// </summary>
         /// <returns>Annotation configuration</returns>
-        [System.Web.Mvc.HttpGet]
-        [System.Web.Mvc.Route("loadConfig")]
+        [System.Web.Http.HttpGet]
+        [System.Web.Http.Route("loadConfig")]
         public AnnotationConfiguration LoadConfig()
         {
             return globalConfiguration.Annotation;

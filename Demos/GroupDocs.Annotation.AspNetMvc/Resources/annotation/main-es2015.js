@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
 /***/ "../../node_modules/raw-loader/index.js!./src/app/app.component.html":
-/*!******************************************************************************************************************!*\
-  !*** C:/GroupDocs.Annotation-for-.NET/Demos/MVC/src/client/node_modules/raw-loader!./src/app/app.component.html ***!
-  \******************************************************************************************************************/
+/*!*****************************************************************************************************************************************!*\
+  !*** C:/GroupDocs.Annotation-for-.NET/Demos/GroupDocs.Annotation.AspNetMvc/client/node_modules/raw-loader!./src/app/app.component.html ***!
+  \*****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -174,7 +174,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\GroupDocs.Annotation-for-.NET\Demos\MVC\src\client\apps\annotation\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\GroupDocs.Annotation-for-.NET\Demos\GroupDocs.Annotation.AspNetMvc\client\apps\annotation\src\main.ts */"./src/main.ts");
 
 
 /***/ })
