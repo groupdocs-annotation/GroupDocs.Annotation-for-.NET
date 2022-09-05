@@ -15,11 +15,11 @@ namespace GroupDocs.Annotation.MVC
             // set GroupDocs.Annotation license
             DomainGenerator annotationDomainGenerator = new DomainGenerator(annotationAssemblyName, "GroupDocs.Annotation.License");
             annotationDomainGenerator.SetAnnotationLicense();
-           
+
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-        }       
-    }     
+        }
+    }
 }

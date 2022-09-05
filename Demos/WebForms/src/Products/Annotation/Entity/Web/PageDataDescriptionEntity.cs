@@ -7,9 +7,10 @@ namespace GroupDocs.Annotation.WebForms.Products.Annotation.Entity.Web
     {
         /// List of annotation data  
         [JsonProperty]
-        private AnnotationDataEntity[] annotations;       
+        private AnnotationDataEntity[] annotations;
 
-        public void SetAnnotations(AnnotationDataEntity[] annotations) {
+        public void SetAnnotations(AnnotationDataEntity[] annotations)
+        {
             this.annotations = annotations;
         }
 

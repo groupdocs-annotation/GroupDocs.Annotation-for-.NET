@@ -2,7 +2,6 @@
 using GroupDocs.Annotation.Models.AnnotationModels;
 using GroupDocs.Annotation.MVC.Products.Annotation.Entity.Web;
 using GroupDocs.Annotation.Options;
-using System;
 using System.Globalization;
 
 namespace GroupDocs.Annotation.MVC.Products.Annotation.Annotator

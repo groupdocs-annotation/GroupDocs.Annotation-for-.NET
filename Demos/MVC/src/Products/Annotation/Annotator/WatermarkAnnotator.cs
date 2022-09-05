@@ -1,8 +1,8 @@
-﻿using GroupDocs.Annotation.MVC.Products.Annotation.Entity.Web;
-using System;
-using GroupDocs.Annotation.Options;
+﻿using GroupDocs.Annotation.Models;
 using GroupDocs.Annotation.Models.AnnotationModels;
-using GroupDocs.Annotation.Models;
+using GroupDocs.Annotation.MVC.Products.Annotation.Entity.Web;
+using GroupDocs.Annotation.Options;
+using System;
 
 namespace GroupDocs.Annotation.MVC.Products.Annotation.Annotator
 {

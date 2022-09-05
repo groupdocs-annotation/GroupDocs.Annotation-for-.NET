@@ -13,7 +13,7 @@ namespace GroupDocs.Annotation.WebForms.Products.Annotation.Util.Directory
         /// <param name="annotationConfiguration">AnnotationConfiguration</param>
         public DirectoryUtils(AnnotationConfiguration annotationConfiguration)
         {
-            FilesDirectory = new FilesDirectoryUtils(annotationConfiguration);            
+            FilesDirectory = new FilesDirectoryUtils(annotationConfiguration);
         }
     }
 }

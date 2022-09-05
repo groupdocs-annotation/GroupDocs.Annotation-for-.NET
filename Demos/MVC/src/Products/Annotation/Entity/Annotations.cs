@@ -7,12 +7,12 @@
         };
         internal string[] Diagram = {
             "area",
-            "point",           
+            "point",
             "polyline",
-            "textField",                   
+            "textField",
             "arrow",
             "textRedaction",
-            "resourcesRedaction",           
+            "resourcesRedaction",
             "distance"
         };
         internal string[] Word = {
@@ -51,7 +51,7 @@
             "textStrikeout",
             "polyline",
             "textField",
-            "watermark",           
+            "watermark",
             "arrow",
             "textRedaction",
             "resourcesRedaction",
@@ -65,11 +65,11 @@
             "textStrikeout",
             "polyline",
             "textField",
-            "watermark",         
+            "watermark",
             "arrow",
             "textRedaction",
             "resourcesRedaction",
-            "textUnderline",           
+            "textUnderline",
             "textHighlight"
         };
     }

@@ -426,7 +426,6 @@ namespace GroupDocs.Annotation.WebForms.Products.Annotation.Controllers
                 default: return Path.GetFileName(path);
             }
         }
-
         ///// <summary>
         ///// Annotate document
         ///// </summary>      

@@ -10,7 +10,7 @@ namespace GroupDocs.Annotation.MVC
             config.EnableCors();
 
             // Web API routes
-            config.MapHttpAttributeRoutes();              
+            config.MapHttpAttributeRoutes();
         }
     }
 }
