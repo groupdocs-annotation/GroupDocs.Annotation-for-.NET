@@ -68,6 +68,9 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Config
         [JsonProperty]
         private readonly bool zoom = true;
 
+        [JsonProperty]
+        private readonly string defaultCommentator = "";
+
         /// <summary>
         /// Initializes a new instance of the <see cref="AnnotationConfiguration"/> class.
         /// Get Annotation configuration section from the Web.config.
@@ -106,6 +109,7 @@ namespace GroupDocs.Annotation.AspNetMvc.Products.Annotation.Config
             this.downloadAnnotated = valuesGetter.GetBooleanPropertyValue("downloadAnnotated", this.downloadAnnotated);
             this.preloadPageCount = valuesGetter.GetIntegerPropertyValue("preloadPageCount", this.preloadPageCount);
             this.zoom = valuesGetter.GetBooleanPropertyValue("zoom", this.zoom);
+            this.defaultCommentator = valuesGetter.GetStringPropertyValue("defaultCommentator", this.defaultCommentator);
         }
 
         public string GetFilesDirectory()
