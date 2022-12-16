@@ -13,7 +13,7 @@ namespace GroupDocs.Annotation.AspNetMvc
         {
             string licensePath = "";
             SetLicense license = new SetLicense();
-            license.Set_License(licensePath);
+            license.AddLicense(licensePath);
 
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
