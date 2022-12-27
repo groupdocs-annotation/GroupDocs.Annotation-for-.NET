@@ -2,7 +2,7 @@
 {
     public class SetLicense
     {
-        public void Set_License(string licensePath)
+        public void AddLicense(string licensePath)
         {
             License license = new License();
             license.SetLicense(licensePath);

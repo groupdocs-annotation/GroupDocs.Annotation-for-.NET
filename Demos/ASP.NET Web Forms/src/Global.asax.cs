@@ -12,7 +12,7 @@ namespace GroupDocs.Annotation.AspNetWebForms
         {
             string licensePath = "";
             SetLicense license = new SetLicense();
-            license.Set_License(licensePath); ;
+            license.AddLicense(licensePath); ;
 
             // Code that runs on application startup
             GlobalConfiguration.Configure(WebApiConfig.Register);
