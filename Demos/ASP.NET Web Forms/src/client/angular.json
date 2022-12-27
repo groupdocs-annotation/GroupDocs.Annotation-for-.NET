@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../resources/annotation",
+            "outputPath": "/dist",
             "index": "apps/annotation/src/index.html",
             "main": "apps/annotation/src/main.ts",
             "polyfills": "apps/annotation/src/polyfills.ts",
