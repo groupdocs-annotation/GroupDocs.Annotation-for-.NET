@@ -21,7 +21,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
             {
                 SearchTextFragment searchText = new SearchTextFragment()
                 {
-                    Text = "Welcome to GroupDocs",
+                    Text = "Welcome to GroupDocs", //here should be the text that is contained in your document, otherwise nothing will be highlighted
                     FontSize = 10,
                     FontFamily = "Calibri",
                     FontColor = 65535,
