@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using GroupDocs.Annotation.Models;
 using GroupDocs.Annotation.Models.AnnotationModels;
 using GroupDocs.Annotation.Options;
+using Point = GroupDocs.Annotation.Models.Point;
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocument
 {
@@ -21,10 +23,11 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
                 ReplacementAnnotation replacement = new ReplacementAnnotation
                 {
                     CreatedOn = DateTime.Now,
-                    FontColor = 65535,
+                    FontColor = Color.Blue.ToArgb(),
                     Message = "This is replacement annotation",
                     Opacity = 0.7,
                     PageNumber = 0,
+                    BackgroundColor = Color.Red.ToArgb(),
                     Points = new List<Point>
                     {
                         new Point(80, 730), new Point(240, 730), new Point(80, 650), new Point(240, 650)

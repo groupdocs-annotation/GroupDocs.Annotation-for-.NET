@@ -1,5 +1,4 @@
 ﻿using System;
-using GroupDocs.Annotation.Licenses;
 
 namespace GroupDocs.Annotation.Examples.CSharp
 {

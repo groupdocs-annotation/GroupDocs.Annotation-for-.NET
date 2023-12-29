@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using GroupDocs.Annotation.Licenses;
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
 {
