@@ -2,6 +2,8 @@
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
 {
+    using GroupDocs.Annotation;
+
     /// <summary>
     /// This example demonstrates document info extraction
     /// </summary>
@@ -9,6 +11,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # GetFileInfo : document info extraction.");
+
             using (Annotator annotator = new Annotator(Constants.INPUT))
             {
                 IDocumentInfo info = annotator.Document.GetDocumentInfo();

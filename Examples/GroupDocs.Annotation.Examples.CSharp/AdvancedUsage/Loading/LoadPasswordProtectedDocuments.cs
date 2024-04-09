@@ -1,11 +1,13 @@
 ﻿using System;
 using System.IO;
-using GroupDocs.Annotation.Models;
-using GroupDocs.Annotation.Models.AnnotationModels;
-using GroupDocs.Annotation.Options;
 
 namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
 {
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Options;
+    using GroupDocs.Annotation.Models;
+    using GroupDocs.Annotation.Models.AnnotationModels;
+    
     /// <summary>
     /// This example demonstrates annotating documents that are protected with a password.
     /// </summary>
@@ -13,6 +15,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Advanced Usage] # LoadPasswordProtectedDocuments : annotating documents that are protected with a password.");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             LoadOptions loadOptions = new LoadOptions() { Password = "1234" };

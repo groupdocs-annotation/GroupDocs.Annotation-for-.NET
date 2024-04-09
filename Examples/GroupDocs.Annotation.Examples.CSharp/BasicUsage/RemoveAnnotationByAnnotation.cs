@@ -1,13 +1,20 @@
 ﻿using System;
 using System.IO;
-using GroupDocs.Annotation.Options;
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
 {
+    using GroupDocs.Annotation;
+
+    /// <summary>
+    /// This example demonstrates removing annotation from the document by annotation object.
+    /// </summary>
     class RemoveAnnotationByAnnotation
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # RemoveAnnotationByAnnotation : removing annotation from the document by annotation object.");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             using (Annotator annotator = new Annotator(Constants.ANNOTATED))

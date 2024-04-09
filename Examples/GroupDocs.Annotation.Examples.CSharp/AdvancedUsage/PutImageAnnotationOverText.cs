@@ -1,16 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
-using GroupDocs.Annotation.Models;
-using GroupDocs.Annotation.Models.AnnotationModels;
 
 namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage
 {
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Models;
+    using GroupDocs.Annotation.Models.AnnotationModels;
+
+    /// <summary>
+    /// This example demonstrates how to add image annotaion over the text
+    /// </summary>
     class PutImageAnnotationOverText
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Advanced Usage] # PutImageAnnotationOverText : adding image annotaion over the text.");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result_for_zIndex" + Path.GetExtension(Constants.INPUT_ZINDEX));
 
             using (Annotator annotator = new Annotator(Constants.INPUT_ZINDEX))

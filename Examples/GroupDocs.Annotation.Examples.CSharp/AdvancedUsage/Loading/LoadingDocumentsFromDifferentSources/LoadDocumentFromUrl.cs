@@ -1,11 +1,13 @@
-﻿using GroupDocs.Annotation.Models;
-using GroupDocs.Annotation.Models.AnnotationModels;
-using System;
+﻿using System;
 using System.IO;
 using System.Net;
 
 namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
 {
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Models;
+    using GroupDocs.Annotation.Models.AnnotationModels;
+
     /// <summary>
     /// This example demonstrates loading document from URL.
     /// </summary>
@@ -13,6 +15,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Advanced Usage] # LoadDocumentFromUrl : loading document from URL.");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             string url = "https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/blob/master/Examples/Resources/SampleFiles/input.pdf?raw=true";

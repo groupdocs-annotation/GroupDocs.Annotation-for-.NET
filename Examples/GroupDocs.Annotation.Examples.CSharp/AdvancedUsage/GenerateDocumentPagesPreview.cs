@@ -1,9 +1,11 @@
-﻿using GroupDocs.Annotation.Options;
-using System;
+﻿using System;
 using System.IO;
 
 namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage
 {
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Options;
+    
     /// <summary>
     /// This example demonstrates annotating generating previews from document
     /// </summary>
@@ -11,6 +13,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Advanced Usage] # GenerateDocumentPagesPreview : annotating generating previews from document.");
+
             using (Annotator annotator = new Annotator(Constants.INPUT))
             {
                 PreviewOptions previewOptions = new PreviewOptions(pageNumber =>

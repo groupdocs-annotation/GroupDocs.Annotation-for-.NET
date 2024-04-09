@@ -15,6 +15,9 @@ namespace GroupDocs.Annotation.Examples.CSharp
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # SetLicenseFromFile : how to set license from file.");
+
             if (File.Exists(Constants.LicensePath))
             {
                 License license = new License();

@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
-using GroupDocs.Annotation.Models;
-using GroupDocs.Annotation.Models.AnnotationModels;
-using GroupDocs.Annotation.Options;
 
 namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
 {
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Options;
     /// <summary>
     /// This example demonstrates loading annotated document versions that were added using save method.
     /// </summary>
@@ -15,6 +12,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Advanced Usage] # LoadingAnnotatedDocumentVersion : loading annotated document versions that were added using save method.");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(),
                 "result" + Path.GetExtension(Constants.INPUT));
 

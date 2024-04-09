@@ -1,12 +1,13 @@
-﻿using GroupDocs.Annotation.Models;
-using GroupDocs.Annotation.Models.AnnotationModels;
-using GroupDocs.Annotation.Options;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
 {
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Models;
+    using GroupDocs.Annotation.Models.AnnotationModels;
+
     /// <summary>
     /// This example demonstrates how to update annotation
     /// </summary>
@@ -14,6 +15,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # UpdateAnnotation : how to update annotation.");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             using (Annotator annotator = new Annotator(Constants.INPUT))

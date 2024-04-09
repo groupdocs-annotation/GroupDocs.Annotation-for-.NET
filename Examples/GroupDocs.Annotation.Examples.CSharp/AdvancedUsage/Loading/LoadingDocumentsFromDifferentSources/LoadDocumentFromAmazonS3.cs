@@ -1,13 +1,17 @@
 ﻿#if !NETCOREAPP
-using Amazon.S3;
-using Amazon.S3.Model;
-using GroupDocs.Annotation.Models;
-using GroupDocs.Annotation.Models.AnnotationModels;
+
 using System;
 using System.IO;
 
 namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
 {
+    using Amazon.S3;
+    using Amazon.S3.Model;
+    
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Models;
+    using GroupDocs.Annotation.Models.AnnotationModels;
+
     /// <summary>
     /// This example demonstrates loading document from Amazon S3 storage.
     /// </summary>
@@ -15,6 +19,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Advanced Usage] # LoadDocumentFromAmazonS3 : loading document from Amazon S3 storage");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             string key = "sample.pdf";

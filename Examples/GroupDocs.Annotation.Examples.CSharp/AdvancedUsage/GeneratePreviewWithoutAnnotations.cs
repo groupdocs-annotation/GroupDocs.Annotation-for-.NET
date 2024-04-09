@@ -1,8 +1,11 @@
-﻿using System.IO;
-using GroupDocs.Annotation.Options;
+﻿using System;
+using System.IO;
 
 namespace GroupDocs.Annotation.Examples.CSharp
 {
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Options;    
+
     /// <summary>
     /// This example demonstrates generating preview of document without rendering comments
     /// </summary>
@@ -10,6 +13,9 @@ namespace GroupDocs.Annotation.Examples.CSharp
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Advanced Usage] # GeneratePreviewWithoutAnnotations : generating preview of document without rendering comments.");
+
             using (Annotator annotator = new Annotator(Constants.ANNOTATED_DOCX))
             {
                 PreviewOptions previewOptions = new PreviewOptions(pageNumber =>

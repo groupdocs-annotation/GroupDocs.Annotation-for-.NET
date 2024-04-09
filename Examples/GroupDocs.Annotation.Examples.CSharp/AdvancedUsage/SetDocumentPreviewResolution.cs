@@ -1,13 +1,21 @@
 ﻿using System;
 using System.IO;
-using GroupDocs.Annotation.Options;
 
 namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage
 {
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Options;
+
+    /// <summary>
+    /// This example demonstrates generating preview with specifix preview image resolutions
+    /// </summary>
     class SetDocumentPreviewResolution
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Advanced Usage] # SetDocumentPreviewResolution : generating preview with specifix preview image resolutions.");
+
             using (Annotator annotator = new Annotator(Constants.INPUT))
             {
                 PreviewOptions previewOptions = new PreviewOptions(pageNumber =>

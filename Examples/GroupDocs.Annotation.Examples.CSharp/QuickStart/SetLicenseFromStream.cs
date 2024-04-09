@@ -10,6 +10,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # SetLicenseFromStream : how to set license from stream.");
+
             if (File.Exists(Constants.LicensePath))
             {
                 using (FileStream stream = File.OpenRead(Constants.LicensePath))

@@ -1,9 +1,11 @@
-﻿using GroupDocs.Annotation.Options;
-using System;
+﻿using System;
 using System.IO;
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
 {
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Options;
+
     /// <summary>
     /// This example demonstrates how to remove annotations from document using SaveOptions Property
     /// </summary>
@@ -11,6 +13,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # RemoveAnnotationUsingSaveOptions : remove annotations from document using SaveOptions Property.");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             using (Annotator annotator = new Annotator(Constants.ANNOTATED))

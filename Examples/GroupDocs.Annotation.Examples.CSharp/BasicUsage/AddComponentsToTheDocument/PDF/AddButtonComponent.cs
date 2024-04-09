@@ -1,20 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using GroupDocs.Annotation.Models;
-using GroupDocs.Annotation.Models.AnnotationModels;
-using GroupDocs.Annotation.Models.FormatSpecificComponents.Pdf;
-using GroupDocs.Annotation.Options;
+using System.Collections.Generic;
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocument
 {
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Models;
+    using GroupDocs.Annotation.Models.FormatSpecificComponents.Pdf;
+
     /// <summary>
     /// This example demonstrates adding button component.
     /// </summary>
     class AddButtonComponent
     {
+        /// <summary>
+        /// Known issue for 24.4 version to fail without setting some property and leave as null value 
+        /// Will be fixed with the nearest 24.5.
+        /// </summary>
         public static void Run()
-        {
+        {   
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # AddButtonComponent : adding button component");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             using (Annotator annotator = new Annotator(Constants.INPUT))
@@ -29,6 +36,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
                     AlternateName = "Name",
                     PartialName = "Patial Name",
                     NormalCaption = "Caption",
+                    RolloverCaption = "Rollover",                    
                     ButtonColor = 16761035,
                     Replies = new List<Reply>
                         {
@@ -49,6 +57,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
             }
 
             Console.WriteLine($"\nDocument saved successfully.\nCheck output in {outputPath}.");
+            /**/
         }
     }
 }

@@ -1,10 +1,11 @@
-﻿using GroupDocs.Annotation;
-using GroupDocs.Annotation.Options;
-using System;
+﻿using System;
 using System.IO;
 
 namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage
 {
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Options;
+
     /// <summary>
     /// This example demonstrates generating previews from document with specified worksheet columns
     /// </summary>
@@ -12,6 +13,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Advanced Usage] # GeneratePreviewWorksheetColumns : generating previews from document with specified worksheet columns.");
+
             PreviewOptions previewOptions =
                 new PreviewOptions(
                     pageNumber => new FileStream(Path.Combine(Constants.GetOutputDirectoryPath(), $"cells_page{pageNumber}.png"), FileMode.Create),

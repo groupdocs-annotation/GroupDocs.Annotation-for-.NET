@@ -4,11 +4,11 @@ namespace GroupDocs.Annotation.Examples.CSharp
 {
     using GroupDocs.Annotation.Examples.CSharp.BasicUsage;
     using GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocument;
-    
-    using GroupDocs.Annotation.Examples.CSharp.AdvancedUsage;    
+
+    using GroupDocs.Annotation.Examples.CSharp.AdvancedUsage;
     using GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading;
     using GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Saving;
-    
+
     class RunExamples
     {
         static void Main(string[] args)
@@ -244,7 +244,7 @@ namespace GroupDocs.Annotation.Examples.CSharp
             AddDropdownComponent.Run();
             #endregion
 
-             #region Add button annotation
+            #region Add button annotation
             AddButtonComponent.Run();
             #endregion
 

@@ -1,20 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using GroupDocs.Annotation.Models;
-using GroupDocs.Annotation.Models.AnnotationModels;
-using GroupDocs.Annotation.Models.FormatSpecificComponents.Pdf;
-using GroupDocs.Annotation.Options;
+using System.Collections.Generic;
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocument
 {
+    using GroupDocs.Annotation;    
+    using GroupDocs.Annotation.Models;    
+    using GroupDocs.Annotation.Models.FormatSpecificComponents.Pdf;
+
     /// <summary>
-    /// This example demonstrates adding area annotation.
+    /// This example demonstrates adding dropdown component.
     /// </summary>
     class AddDropdownComponent
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # AddDropdownComponent : adding dropdown component.");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             using (Annotator annotator = new Annotator(Constants.INPUT))

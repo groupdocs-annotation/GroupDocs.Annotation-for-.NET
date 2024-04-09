@@ -3,6 +3,8 @@ using System.IO;
 
 namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Saving
 {
+    using GroupDocs.Annotation;
+    
     /// <summary>
     /// This example demonstrates saving result document with specified pages
     /// </summary>
@@ -10,6 +12,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Saving
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Advanced Usage] # SavingSpecificPageRange : loading document from saving result document with specified pages.");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             using (Annotator annotator = new Annotator(Constants.INPUT))

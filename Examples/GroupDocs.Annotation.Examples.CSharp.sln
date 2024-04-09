@@ -9,6 +9,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GroupDocs.Annotation.Exampl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupDocs.Annotation.Examples.CSharp.Core", "GroupDocs.Annotation.Examples.CSharp.Core\GroupDocs.Annotation.Examples.CSharp.Core.csproj", "{1CF87890-1258-42A0-AB6D-6EEA739D3A51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupDocs.Annotation.Examples.CSharp.Net", "GroupDocs.Annotation.Examples.CSharp.Net\GroupDocs.Annotation.Examples.CSharp.Net.csproj", "{106718F4-BCBF-433C-B92F-C6986BAE933D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{1CF87890-1258-42A0-AB6D-6EEA739D3A51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CF87890-1258-42A0-AB6D-6EEA739D3A51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CF87890-1258-42A0-AB6D-6EEA739D3A51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{106718F4-BCBF-433C-B92F-C6986BAE933D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106718F4-BCBF-433C-B92F-C6986BAE933D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106718F4-BCBF-433C-B92F-C6986BAE933D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{106718F4-BCBF-433C-B92F-C6986BAE933D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -31,6 +37,7 @@ Global
 		SolutionGuid = {37C0B8EB-A7D7-4082-9EA0-B8A420C8CE53}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		GroupDocs.Annotation.Examples.CSharp\GroupDocs.Annotation.Examples.CSharp.projitems*{106718f4-bcbf-433c-b92f-c6986bae933d}*SharedItemsImports = 5
 		GroupDocs.Annotation.Examples.CSharp\GroupDocs.Annotation.Examples.CSharp.projitems*{1cf87890-1258-42a0-ab6d-6eea739d3a51}*SharedItemsImports = 5
 		GroupDocs.Annotation.Examples.CSharp\GroupDocs.Annotation.Examples.CSharp.projitems*{663edcb2-e917-4487-8a41-1adab5e18559}*SharedItemsImports = 13
 		GroupDocs.Annotation.Examples.CSharp\GroupDocs.Annotation.Examples.CSharp.projitems*{b910d08a-c433-409c-b8f4-0ee60b9d723e}*SharedItemsImports = 4

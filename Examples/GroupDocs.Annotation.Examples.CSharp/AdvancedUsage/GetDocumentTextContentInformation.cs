@@ -1,8 +1,10 @@
 ﻿using System;
-using GroupDocs.Annotation.Models;
 
 namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage
 {
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Models;    
+
     /// <summary>
     /// This example demonstrates how to get an information about document's text content
     /// </summary>
@@ -10,6 +12,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Advanced Usage] # GetDocumentTextContentInformation : get an information about document's text content.");
+
             using (Annotator annotator = new Annotator(Constants.ANNOTATED_DOCX))
             {
                 IDocumentInfo documentInfo = annotator.Document.GetDocumentInfo();

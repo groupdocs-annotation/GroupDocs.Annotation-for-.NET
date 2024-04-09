@@ -5,8 +5,9 @@ namespace GroupDocs.Annotation.Examples.CSharp
 {
     internal static class Constants
     {
-        
-        public const string LicensePath = "./Resources/GroupDocs.Annotation.lic";
+
+        //public const string LicensePath =  "./Resources/GroupDocs.Annotation.lic";
+        public const string LicensePath = @"c:\Worx\aspose\Docs\Licenses\Conholdate\Total\Subscription\Valid\Conholdate.Total.Product.Family.lic";
         public const string SamplesPath = "./Resources/SampleFiles";
         public const string FontsPath = "./Resources/Fonts";
         public const string OutputPath = "./Results/Output/";

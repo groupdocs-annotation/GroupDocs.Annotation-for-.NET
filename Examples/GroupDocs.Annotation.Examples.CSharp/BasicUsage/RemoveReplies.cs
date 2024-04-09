@@ -1,12 +1,12 @@
-﻿using GroupDocs.Annotation.Models;
-using GroupDocs.Annotation.Models.AnnotationModels;
-using GroupDocs.Annotation.Options;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
 {
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Models.AnnotationModels;
+
     /// <summary>
     /// This example demonstrates how to remove replies from annotated document
     /// </summary>
@@ -14,6 +14,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # RemoveReplies : remove replies from annotated document.");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             // NOTE: Input document already contain annotations with replies

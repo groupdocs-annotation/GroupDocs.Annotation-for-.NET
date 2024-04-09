@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
 {
+    using GroupDocs.Annotation;    
+
     /// <summary>
     /// This example demonstrates getting document pages width and height
     /// </summary>
@@ -11,6 +11,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # GettingSizeOfDocumentPage : getting document pages width and height.");
+
             using (Annotator annotator = new Annotator(Constants.INPUT))
             {
                 IDocumentInfo info = annotator.Document.GetDocumentInfo();

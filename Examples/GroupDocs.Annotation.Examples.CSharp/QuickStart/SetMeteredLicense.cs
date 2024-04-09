@@ -10,6 +10,10 @@ namespace GroupDocs.Annotation.Examples.CSharp
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # SetMeteredLicense : how to set Metered license.");
+
+
             string publicKey = "*****";
             string privateKey = "*****";
             Metered metered = new Metered();

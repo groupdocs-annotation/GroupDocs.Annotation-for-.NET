@@ -1,14 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using GroupDocs.Annotation.Options;
+using System.Collections.Generic;
 
 namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage
 {
+    using GroupDocs.Annotation;
+    using GroupDocs.Annotation.Options;
+
+    /// <summary>
+    /// This example demonstrates working with custom font folder for the document processing
+    /// </summary>
     class LoadingCustomFonts
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Advanced Usage] # LoadingCustomFonts : working with custom font folder for the document processing.");
+
+
             using (Annotator annotator = new Annotator(Constants.INPUT_WITH_CUSTOM_FONT, new LoadOptions { FontDirectories = new List<string> { Constants.GetFontDirectory() } }))
             {
                 PreviewOptions previewOptions = new PreviewOptions(pageNumber =>

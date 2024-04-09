@@ -1,10 +1,12 @@
 ﻿using System;
 using System.IO;
-using GroupDocs.Annotation.Models;
-using GroupDocs.Annotation.Models.AnnotationModels;
+using System.Collections.Generic;
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocument
 {
+    using GroupDocs.Annotation.Models;
+    using GroupDocs.Annotation.Models.AnnotationModels;
+
     /// <summary>
     /// This example demonstrates adding image annotation with local path.
     /// </summary>
@@ -12,6 +14,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
     {
         public static void Run()
         {
+            Console.WriteLine("\n---------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # AddImageAnnotationLocalPath : This example demonstrates adding adding image annotation with local path");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             using (Annotator annotator = new Annotator(Constants.INPUT))

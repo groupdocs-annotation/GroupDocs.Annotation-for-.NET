@@ -1,12 +1,13 @@
-﻿using GroupDocs.Annotation.Models.AnnotationModels;
-using GroupDocs.Annotation.Options;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
 using System.Xml.Serialization;
+using System.Collections.Generic;
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
 {
+    using GroupDocs.Annotation;    
+    using GroupDocs.Annotation.Models.AnnotationModels;    
+
     /// <summary>
     /// This example demonstrates how to extract annotations
     /// </summary>
@@ -14,6 +15,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # ExtractAnnotationsFromDocument : how to extract annotations.");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "annotation.xml");
 
             using (Annotator annotator = new Annotator(Constants.ANNOTATED))

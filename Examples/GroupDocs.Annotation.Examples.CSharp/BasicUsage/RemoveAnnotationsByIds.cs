@@ -1,15 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
-using GroupDocs.Annotation.Options;
+using System.Collections.Generic;
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
 {
+    using GroupDocs.Annotation;
+
+    /// <summary>
+    /// This example demonstrates removing document annotations by known list of annotations Identifiers (Ids).
+    /// </summary>
     class RemoveAnnotationsByIds
     {
         public static void Run()
         {
+            Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # RemoveAnnotationsByIds : removing document annotations by known list of annotations Identifiers (Ids).");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             using (Annotator annotator = new Annotator(Constants.ANNOTATED))

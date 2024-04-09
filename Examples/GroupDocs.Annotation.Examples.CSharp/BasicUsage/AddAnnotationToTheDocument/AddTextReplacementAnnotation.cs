@@ -1,14 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
-using GroupDocs.Annotation.Models;
-using GroupDocs.Annotation.Models.AnnotationModels;
-using GroupDocs.Annotation.Options;
-using Point = GroupDocs.Annotation.Models.Point;
+using System.Drawing;
+using System.Collections.Generic;
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocument
 {
+    using GroupDocs.Annotation.Models;
+    using GroupDocs.Annotation.Models.AnnotationModels;
+    
+
     /// <summary>
     /// This example demonstrates adding text replacement annotation.
     /// </summary>
@@ -16,6 +16,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
     {
         public static void Run()
         {
+            Console.WriteLine("\n---------------------------------------------------------------------------------------------------");
+            Console.WriteLine("[Example Basic Usage] # AddTextReplacementAnnotation : This example demonstrates adding text replacement annotation");
+
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             using (Annotator annotator = new Annotator(Constants.INPUT))
