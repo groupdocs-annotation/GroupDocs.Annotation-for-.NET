@@ -17,8 +17,14 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
             using (Annotator annotator = new Annotator(Constants.INPUT))
             {
                 IDocumentInfo info = annotator.Document.GetDocumentInfo();
-                int width = info.PagesInfo[0].Width;
-                int height = info.PagesInfo[0].Height;
+                if (info.PagesInfo != null && info.PagesInfo.Count > 0)
+                {
+                    Console.WriteLine($"\t Document info: Type {info.FileType}, size = {info.Size}, pages = {info.PageCount}");
+                    foreach( var page in info.PagesInfo ) 
+                    {
+                        Console.WriteLine($"\t\t page #{page.PageNumber}: {page.Width}x{page.Height}");
+                    }
+                }
             }
         }
     }

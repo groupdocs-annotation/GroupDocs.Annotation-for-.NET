@@ -17,7 +17,11 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
             using (Annotator annotator = new Annotator(Constants.INPUT))
             {
                 IDocumentInfo info = annotator.Document.GetDocumentInfo();
-                Console.WriteLine("\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes", info.FileType, info.PageCount, info.Size);
+                if (info == null || info?.PageCount == 0)
+                {
+                    throw new Exception("Unexpected document information!");
+                }
+                Console.WriteLine($"\nFile type: {info.FileType}\nNumber of pages: {info.PageCount}\nDocument size: {info.Size} bytes.");
             }
             Console.WriteLine($"\nDocument info extracted successfully.");
         }
