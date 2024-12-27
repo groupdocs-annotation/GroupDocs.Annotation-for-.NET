@@ -23,7 +23,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
             Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Advanced Usage] # LoadDocumentFromAzure : loading document from Azure");
 
-            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
+            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT_PDF));
 
             string blobName = "sample.pdf";
             using (Annotator annotator = new Annotator(DownloadFile(blobName)))

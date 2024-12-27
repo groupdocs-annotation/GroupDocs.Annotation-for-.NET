@@ -16,7 +16,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
             Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Basic Usage] # RemoveAnnotationUsingSaveOptions : remove annotations from document using SaveOptions Property.");
 
-            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
+            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT_PDF));
 
             using (Annotator annotator = new Annotator(Constants.ANNOTATED))
             {

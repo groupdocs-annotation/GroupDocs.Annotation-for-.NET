@@ -19,9 +19,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Saving
             Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Advanced Usage] # SavingDocumentVersionWithCustomName : saving document version with custom versionKey.");
 
-            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
+            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT_PDF));
 
-            using (Annotator annotator = new Annotator(Constants.INPUT))
+            using (Annotator annotator = new Annotator(Constants.INPUT_PDF))
             {
                 AreaAnnotation area = new AreaAnnotation()
                 {

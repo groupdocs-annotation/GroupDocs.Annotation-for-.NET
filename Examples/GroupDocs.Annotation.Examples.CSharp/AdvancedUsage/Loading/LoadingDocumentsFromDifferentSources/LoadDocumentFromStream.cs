@@ -17,9 +17,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
             Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Advanced Usage] # LoadDocumentFromStream : loading document from Stream");
 
-            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
+            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "LoadDocumentFromStream-result" + Path.GetExtension(Constants.INPUT_PDF));
 
-            using (Annotator annotator = new Annotator(File.OpenRead(Constants.INPUT)))
+            using (Annotator annotator = new Annotator(File.OpenRead(Constants.INPUT_PDF)))
             {
                 AreaAnnotation area = new AreaAnnotation()
                 {

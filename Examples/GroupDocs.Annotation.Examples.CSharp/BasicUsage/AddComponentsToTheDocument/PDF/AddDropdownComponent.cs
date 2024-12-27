@@ -18,9 +18,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
             Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Basic Usage] # AddDropdownComponent : adding dropdown component.");
 
-            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
+            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT_PDF));
 
-            using (Annotator annotator = new Annotator(Constants.INPUT))
+            using (Annotator annotator = new Annotator(Constants.INPUT_PDF))
             {
                 DropdownComponent dropdown = new DropdownComponent
                 {

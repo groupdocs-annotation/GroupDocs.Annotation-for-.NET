@@ -17,9 +17,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
             Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Basic Usage] # AddCheckBoxComponent : adding checkBox component.");
 
-            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
+            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT_PDF));
 
-            using (Annotator annotator = new Annotator(Constants.INPUT))
+            using (Annotator annotator = new Annotator(Constants.INPUT_PDF))
             {
                 CheckBoxComponent checkBox = new CheckBoxComponent
                 {

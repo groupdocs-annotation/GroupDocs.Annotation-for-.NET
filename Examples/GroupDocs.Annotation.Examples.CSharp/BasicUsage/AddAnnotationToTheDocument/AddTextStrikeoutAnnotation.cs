@@ -17,9 +17,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
             Console.WriteLine("\n---------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Basic Usage] # AddTextStrikeoutAnnotation : This example demonstrates adding text strikeout annotation");
 
-            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
+            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT_DOCX));
 
-            using (Annotator annotator = new Annotator(Constants.INPUT))
+            using (Annotator annotator = new Annotator(Constants.INPUT_DOCX))
             {
                 StrikeoutAnnotation strikeout = new StrikeoutAnnotation
                 {

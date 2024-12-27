@@ -18,7 +18,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
             Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Advanced Usage] # LoadPasswordProtectedDocuments : annotating documents that are protected with a password.");
 
-            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
+            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT_PDF));
 
             LoadOptions loadOptions = new LoadOptions() { Password = "1234" };
             using (Annotator annotator = new Annotator(Constants.INPUT_PROTECTED, loadOptions))

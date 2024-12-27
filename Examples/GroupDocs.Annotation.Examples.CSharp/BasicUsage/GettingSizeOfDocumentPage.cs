@@ -14,7 +14,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
             Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Basic Usage] # GettingSizeOfDocumentPage : getting document pages width and height.");
 
-            using (Annotator annotator = new Annotator(Constants.INPUT))
+            using (Annotator annotator = new Annotator(Constants.INPUT_PDF))
             {
                 IDocumentInfo info = annotator.Document.GetDocumentInfo();
                 if (info.PagesInfo != null && info.PagesInfo.Count > 0)

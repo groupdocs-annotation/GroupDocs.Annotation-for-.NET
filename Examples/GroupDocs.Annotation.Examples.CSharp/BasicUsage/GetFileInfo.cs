@@ -14,7 +14,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
             Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Basic Usage] # GetFileInfo : document info extraction.");
 
-            using (Annotator annotator = new Annotator(Constants.INPUT))
+            using (Annotator annotator = new Annotator(Constants.INPUT_PDF))
             {
                 IDocumentInfo info = annotator.Document.GetDocumentInfo();
                 if (info == null || info?.PageCount == 0)

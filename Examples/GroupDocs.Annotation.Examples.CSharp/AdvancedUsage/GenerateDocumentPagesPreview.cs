@@ -16,7 +16,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage
             Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Advanced Usage] # GenerateDocumentPagesPreview : annotating generating previews from document.");
 
-            using (Annotator annotator = new Annotator(Constants.INPUT))
+            using (Annotator annotator = new Annotator(Constants.INPUT_PDF))
             {
                 PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
                 {

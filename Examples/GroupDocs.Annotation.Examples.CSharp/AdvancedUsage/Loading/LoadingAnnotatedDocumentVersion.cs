@@ -16,7 +16,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
             Console.WriteLine("[Example Advanced Usage] # LoadingAnnotatedDocumentVersion : loading annotated document versions that were added using save method.");
 
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(),
-                "result" + Path.GetExtension(Constants.INPUT));
+                "result" + Path.GetExtension(Constants.INPUT_PDF));
 
             LoadOptions loadOptions = new LoadOptions { Version = "FIRST" };
             using (Annotator annotator = new Annotator(Constants.ANNOTATED_WITH_VERSIONS, loadOptions))

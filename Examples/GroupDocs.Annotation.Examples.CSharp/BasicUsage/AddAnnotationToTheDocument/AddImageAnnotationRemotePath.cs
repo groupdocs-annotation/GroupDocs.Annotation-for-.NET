@@ -17,9 +17,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
             Console.WriteLine("\n---------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Basic Usage] # AddImageAnnotationRemotePath : This example demonstrates adding image annotation with remote path");
 
-            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
+            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT_PDF));
 
-            using (Annotator annotator = new Annotator(Constants.INPUT))
+            using (Annotator annotator = new Annotator(Constants.INPUT_PDF))
             {
                 ImageAnnotation image = new ImageAnnotation
                 {

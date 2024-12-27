@@ -18,7 +18,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
             Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Advanced Usage] # LoadDocumentFromFtp : loading document from FTP");
 
-            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
+            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "LoadDocumentFromFtp-result" + Path.GetExtension(Constants.INPUT_PDF));
 
             string filePath = "sample.pdf";
             using (Annotator annotator = new Annotator(GetFileFromFtp(filePath)))

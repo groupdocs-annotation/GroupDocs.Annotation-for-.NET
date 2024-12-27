@@ -17,9 +17,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage
             Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Advanced Usage] # PutImageAnnotationOverText : adding image annotaion over the text.");
 
-            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result_for_zIndex" + Path.GetExtension(Constants.INPUT_ZINDEX));
+            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result_for_zIndex" + Path.GetExtension(Constants.INPUT_DOCX));
 
-            using (Annotator annotator = new Annotator(Constants.INPUT_ZINDEX))
+            using (Annotator annotator = new Annotator(Constants.INPUT_DOCX))
             {
                 ImageAnnotation image = new ImageAnnotation
                 {

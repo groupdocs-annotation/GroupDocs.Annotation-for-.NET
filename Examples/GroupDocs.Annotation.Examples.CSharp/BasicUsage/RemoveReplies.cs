@@ -17,7 +17,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
             Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Basic Usage] # RemoveReplies : remove replies from annotated document.");
 
-            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
+            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT_PDF));
 
             // NOTE: Input document already contain annotations with replies
             using (Annotator annotator = new Annotator(Constants.ANNOTATED_WITH_REPLIES))

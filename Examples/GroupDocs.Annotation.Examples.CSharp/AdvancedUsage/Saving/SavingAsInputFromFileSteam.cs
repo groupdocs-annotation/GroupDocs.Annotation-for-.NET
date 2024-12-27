@@ -15,8 +15,8 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Saving
             Console.WriteLine("[Example Advanced Usage] # SavingAsInputFromFileStream : saving result document as document given to create annotator class.");
 
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(),
-                "result" + Path.GetExtension(Constants.INPUT));
-            using (FileStream fs = new FileStream(Constants.INPUT, FileMode.Open))
+                "result" + Path.GetExtension(Constants.INPUT_PDF));
+            using (FileStream fs = new FileStream(Constants.INPUT_PDF, FileMode.Open))
             {
                 using (Annotator annotator = new Annotator(fs))
                 {

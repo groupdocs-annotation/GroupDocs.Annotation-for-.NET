@@ -10,7 +10,8 @@ namespace GroupDocs.Annotation.Examples.CSharp
         public const string SamplesPath = "./Resources/SampleFiles";
         public const string FontsPath = "./Resources/Fonts";
         public const string OutputPath = "./Results/Output/";
-        public static string INPUT => GetSampleFilePath("input.pdf");
+        public static string INPUT_PDF => GetSampleFilePath("input.pdf");
+        public static string INPUT_DOCX => GetSampleFilePath("input.docx");
         public static string INPUT_ZINDEX => GetSampleFilePath("input_zIndex.docx");
         public static string INPUT_WITH_CUSTOM_FONT => GetSampleFilePath("inputWithCustomFont.pdf"); 
         public static string ANNOTATED_WITH_REPLIES => GetSampleFilePath("annotated_with_replies.pdf");

@@ -72,6 +72,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\UpdateAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GeneratePreviewWithoutAnnotations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)QuickStart\SetLicenseFromFile.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)QuickStart\SetLicenseFromStream.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)QuickStart\SetMeteredLicense.cs" />
@@ -83,7 +84,6 @@
     <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\annotated_with_replies.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\Conholdate.Total.Product.Family.lic" />
     <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\input.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

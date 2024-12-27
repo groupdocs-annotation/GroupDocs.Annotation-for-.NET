@@ -19,9 +19,9 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
             Console.WriteLine("\n---------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Basic Usage] # AddTextReplacementAnnotation : This example demonstrates adding text replacement annotation");
 
-            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
+            string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT_DOCX));
 
-            using (Annotator annotator = new Annotator(Constants.INPUT))
+            using (Annotator annotator = new Annotator(Constants.INPUT_DOCX))
             {
                 ReplacementAnnotation replacement = new ReplacementAnnotation
                 {
