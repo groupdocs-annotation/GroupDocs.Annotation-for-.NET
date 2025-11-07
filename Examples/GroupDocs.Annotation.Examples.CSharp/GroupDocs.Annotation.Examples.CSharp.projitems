@@ -61,6 +61,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\GetFileInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\GetSupportedFileFormats.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\GettingSizeOfDocumentPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\ReadRepliesFromDocument.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationByAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationById.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationsByAnnotations.cs" />

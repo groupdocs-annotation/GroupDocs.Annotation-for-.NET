@@ -103,6 +103,10 @@ namespace GroupDocs.Annotation.Examples.CSharp
             RemoveAnnotationByAnnotation.Run();
             #endregion
 
+            #region Reading annotation replies from annotated document
+            ReadRepliesFromDocument.Run();
+            #endregion
+
             #region Remove annotation from document by Id
             RemoveAnnotationById.Run();
             #endregion
