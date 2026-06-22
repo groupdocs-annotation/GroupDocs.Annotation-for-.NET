@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -12,7 +12,7 @@
   <Import Project="..\GroupDocs.Annotation.Examples.CSharp\GroupDocs.Annotation.Examples.CSharp.projitems" Label="Shared" />
 
   <ItemGroup>
-    <PackageReference Include="GroupDocs.Annotation" Version="25.11.0" />
+    <PackageReference Include="GroupDocs.Annotation" Version="26.6.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="2.80.0" />
   </ItemGroup>

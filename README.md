@@ -81,7 +81,7 @@ using (Annotator annotator = new Annotator(“input.pdf”))
         PageNumber = 9
     };
     annotator.Add(new List<AnnotationBase>() { area, ellipse });
-    annotator.Save(“result.pdf” new SaveOptions { OnlyAnnotatedPages = true});
+    annotator.Save("result.pdf", new SaveOptions { OnlyAnnotatedPages = true });
 }
 ```
 
