@@ -61,6 +61,6 @@
     "tslint": "~5.11.0",
     "typescript": "~3.4.5",
     "prettier": "1.16.4",
-    "@angular/cli": "8.0.0"
+    "@angular/cli": "15.1.4"
   }
 }
