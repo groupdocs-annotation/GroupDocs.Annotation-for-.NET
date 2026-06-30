@@ -7,6 +7,7 @@ namespace GroupDocs.Annotation.Examples.CSharp
     {
 
         public const string LicensePath =  "./Resources/GroupDocs.Annotation.lic";
+        public const string ENV_LICENSE_FILE = "GROUPDOCS_ANNOTATION_LICENSE";
         public const string SamplesPath = "./Resources/SampleFiles";
         public const string FontsPath = "./Resources/Fonts";
         public const string OutputPath = "./Results/Output/";

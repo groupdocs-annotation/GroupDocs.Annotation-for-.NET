@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net462</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <Import Project="..\GroupDocs.Annotation.Examples.CSharp\GroupDocs.Annotation.Examples.CSharp.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <!-- Published GroupDocs.Annotation package (router -> GroupDocs.Annotation.Net462 + full
+         dependency closure). Staged prerelease builds resolve from the GitLab feed in
+         Examples/NuGet.Config. -->
+    <PackageReference Include="GroupDocs.Annotation" Version="26.6.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <!-- Required only on .NET Framework: the "load from Amazon S3 / Azure" examples are
+         compiled in via #if !NETCOREAPP and need these SDKs (net6/net8 exclude them). -->
+    <PackageReference Include="AWSSDK.S3" Version="3.3.109.1" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+  </ItemGroup>
+
+</Project>

@@ -153,6 +153,8 @@ publish/
 # NuGet v3's project.json files produces more ignoreable files
 *.nuget.props
 *.nuget.targets
+# Developer-only staging feed config (GitLab source + per-developer creds)
+Examples/NuGet.Config
 
 # Microsoft Azure Build Output
 csx/
