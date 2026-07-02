@@ -11,9 +11,6 @@
   <Import Project="..\GroupDocs.Annotation.Examples.CSharp\GroupDocs.Annotation.Examples.CSharp.projitems" Label="Shared" />
 
   <ItemGroup>
-    <!-- Published GroupDocs.Annotation package (router -> GroupDocs.Annotation.Net60 + full
-         dependency closure). Staged prerelease builds resolve from the GitLab feed in
-         Examples/NuGet.Config. -->
     <PackageReference Include="GroupDocs.Annotation" Version="26.6.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>

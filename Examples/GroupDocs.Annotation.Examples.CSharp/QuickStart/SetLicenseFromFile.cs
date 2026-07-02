@@ -18,7 +18,7 @@ namespace GroupDocs.Annotation.Examples.CSharp
             Console.WriteLine("\n--------------------------------------------------------------------------------------------------");
             Console.WriteLine("[Example Basic Usage] # SetLicenseFromFile : how to set license from file.");
 
-            string? envLicense = Environment.GetEnvironmentVariable(Constants.ENV_LICENSE_FILE);
+            var envLicense = Environment.GetEnvironmentVariable(Constants.ENV_LICENSE_FILE);
 
             if (File.Exists(Constants.LicensePath))
             {
