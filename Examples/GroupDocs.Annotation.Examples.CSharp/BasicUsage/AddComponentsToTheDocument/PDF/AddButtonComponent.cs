@@ -53,7 +53,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
                         }
                 };
                 annotator.Add(button);
-                annotator.Save("result.pdf");
+                annotator.Save(outputPath);
             }
 
             Console.WriteLine($"\nDocument saved successfully.\nCheck output in {outputPath}.");

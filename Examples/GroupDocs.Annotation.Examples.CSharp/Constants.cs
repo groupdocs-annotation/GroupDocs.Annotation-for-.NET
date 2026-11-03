@@ -23,6 +23,12 @@ namespace GroupDocs.Annotation.Examples.CSharp
         public static string ANNOTATED => GetSampleFilePath("annotated.pdf");
         public static string ANNOTATED_DOCX => GetSampleFilePath("annotated.docx");
         public static string CELLS_INPUT => GetSampleFilePath("input.xlsx");
+        public static string ANNOTATIONS_XML => GetSampleFilePath("annotation.xml");
+        public static string SAMPLE_IMAGE => GetSampleFilePath("sample-image.png");
+        public static string SAMPLE_IMAGE_JPG => GetSampleFilePath("sample-image.jpg");
+        public static string REMOTE_RESOURCES_HTML => GetSampleFilePath("remote-resources.html");
+        public static string REMOTE_RESOURCES_DOCX => GetSampleFilePath("remote-resources.docx");
+        public static string REMOTE_RESOURCES_EML => GetSampleFilePath("remote-resources.eml");
 
         private static string GetSampleFilePath(string filePath, [CallerFilePath] string callerFilePath = null)
         {

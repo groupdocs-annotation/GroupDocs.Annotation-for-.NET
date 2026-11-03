@@ -241,3 +241,6 @@ deploy_key
 #License files
 *.lic
 
+
+# Output of the examples
+**/Results/

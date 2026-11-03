@@ -16,7 +16,10 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Saving
 
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT_PDF));
 
-            using (Annotator annotator = new Annotator(Constants.INPUT_PDF))
+            // the document is saved over the file it was opened from, so work on a copy of the sample
+            File.Copy(Constants.INPUT_PDF, outputPath, true);
+
+            using (Annotator annotator = new Annotator(outputPath))
             {
                 annotator.Save();
             }

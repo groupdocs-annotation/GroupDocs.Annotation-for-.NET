@@ -8,6 +8,11 @@ This package contains C# Example Projects for [GroupDocs.Annotation for .NET](ht
   </a>
 </p>
 
+The examples reference the [GroupDocs.Annotation](https://www.nuget.org/packages/GroupDocs.Annotation) package from NuGet:
+
+* `GroupDocs.Annotation.Examples.CSharp.Net8`, `.Net6` and `.Net462` - SDK-style projects for .NET 8, .NET 6 and .NET Framework 4.6.2
+* `GroupDocs.Annotation.Examples.CSharp.Framework` - classic .NET Framework project (packages.config)
+
 ## How to Run the Examples in Visual Studio?
 
 Follow the given steps to proceed with project build:

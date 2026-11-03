@@ -7,6 +7,7 @@ namespace GroupDocs.Annotation.Examples.CSharp
 
     using GroupDocs.Annotation.Examples.CSharp.AdvancedUsage;
     using GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading;
+    using GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading.ExternalResources;
     using GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Saving;
 
     class RunExamples
@@ -27,7 +28,7 @@ namespace GroupDocs.Annotation.Examples.CSharp
             GetSupportedFileFormats.Run();
             #endregion
 
-            #region Get All version keys from document
+            #region Get file info
             GetFileInfo.Run();
             #endregion
 
@@ -35,7 +36,7 @@ namespace GroupDocs.Annotation.Examples.CSharp
             GetListOfAnnotationsUsingVersionKey.Run();
             #endregion
 
-            #region Get file info
+            #region Get all version keys from document
             GetAllVersionKeysOnDocument.Run();
             #endregion
 
@@ -63,6 +64,27 @@ namespace GroupDocs.Annotation.Examples.CSharp
             SetDocumentPreviewResolution.Run();
             #endregion
 
+            #region Configure annotator settings (cache and logger)
+            ConfigureAnnotatorSettings.Run();
+            #endregion
+
+            #region Add image with the specified quality to PDF
+            ChangeImageQuality.Run();
+            #endregion
+
+            #region Write document annotations to XML file
+            ImportAnnotationsFromDocument.Run();
+            #endregion
+
+            #region Add annotations from XML file
+            ExportAnnotationsFromXMLFile.Run();
+            #endregion
+
+            #region Rotate PDF page
+            RotatingPdfDocuments.Run();
+            RotatingPdfPageWithAnnotations.Run();
+            #endregion
+
             #region Load document from local disk
             LoadDocumentFromLocalDisk.Run();
             #endregion
@@ -73,6 +95,13 @@ namespace GroupDocs.Annotation.Examples.CSharp
 
             #region Load password-protected documents
             LoadPasswordProtectedDocuments.Run();
+            #endregion
+
+            #region External resources (remote images, style sheets, linked files)
+            SkipExternalResources.Run();
+            AllowTrustedExternalResources.Run();
+            LoadAllExternalResources.Run();
+            ProvideExternalResourcesWithHandler.Run();
             #endregion
 
             #region Load document from url
@@ -241,14 +270,14 @@ namespace GroupDocs.Annotation.Examples.CSharp
             #endregion
 
             #region Add checkbox component
+            AddCheckBoxComponent.Run();
+            #endregion
+
+            #region Add dropdown component
             AddDropdownComponent.Run();
             #endregion
 
-            #region Add dropdown annotation
-            AddDropdownComponent.Run();
-            #endregion
-
-            #region Add button annotation
+            #region Add button component
             AddButtonComponent.Run();
             #endregion
 
@@ -278,7 +307,8 @@ namespace GroupDocs.Annotation.Examples.CSharp
 
             Console.WriteLine();
             Console.WriteLine("All done.");
-            Console.ReadKey();
+            if (!Console.IsInputRedirected)
+                Console.ReadKey();
         }
     }
 }

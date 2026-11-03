@@ -9,6 +9,17 @@
     <Import_RootNamespace>GroupDocs.Annotation.Examples.CSharp</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\ChangeImageQuality.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\ConfigureAnnotatorSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\ExportAnnotationsFromXMLFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\ImportAnnotationsFromDocument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\RotatingPdfDocuments.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\RotatingPdfPageWithAnnotations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\ExternalResources\AllowTrustedExternalResources.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\ExternalResources\ExternalResourceLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\ExternalResources\LoadAllExternalResources.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\ExternalResources\ProvideExternalResourcesWithHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\ExternalResources\SkipExternalResources.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GenerateDocumentPagesPreview.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GeneratePreviewWithoutComments.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GeneratePreviewWorksheetColumns.cs" />
@@ -89,6 +100,21 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\input_protected.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\remote-resources.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\remote-resources.eml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\remote-resources.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\sample-image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\sample-image.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

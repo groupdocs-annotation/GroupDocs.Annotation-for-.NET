@@ -20,7 +20,7 @@ namespace GroupDocs.Annotation.Examples.CSharp
             {
                 PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
                 {
-                    var pagePath = $"result{pageNumber}.png";
+                    var pagePath = Path.Combine(Constants.GetOutputDirectoryPath(), $"result{pageNumber}.png");
                     return File.Create(pagePath);
                 });
 

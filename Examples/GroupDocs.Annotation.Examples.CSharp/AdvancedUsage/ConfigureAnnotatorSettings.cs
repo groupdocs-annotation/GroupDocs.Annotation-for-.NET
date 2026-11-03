@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 
 namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage

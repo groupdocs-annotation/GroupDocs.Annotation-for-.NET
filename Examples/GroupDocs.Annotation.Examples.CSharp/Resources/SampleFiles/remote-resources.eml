@@ -1,0 +1,26 @@
+From: Report Service <reports@example.com>
+To: Project Team <team@example.com>
+Subject: Project status report
+Date: Fri, 30 Oct 2026 10:00:00 +0000
+Message-ID: <status-report-2026-10@example.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Project status report</title>
+  <link rel="stylesheet" href="https://example.com/styles/report.css">
+</head>
+<body>
+  <h1>Project status report</h1>
+  <p>This page references two remote pictures and a remote style sheet.</p>
+  <p>Chart from a trusted location:</p>
+  <img src="https://raw.githubusercontent.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/master/Examples/GroupDocs.Annotation.Examples.CSharp/Resources/SampleFiles/sample-image.png" width="240" height="140" alt="Progress chart">
+  <p>Banner from an unknown location:</p>
+  <img src="https://example.com/images/banner.png" width="240" height="60" alt="Banner">
+  <p>All milestones are on track.</p>
+</body>
+</html>
